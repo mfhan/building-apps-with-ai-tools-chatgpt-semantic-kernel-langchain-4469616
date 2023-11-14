@@ -7,8 +7,8 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
-        {"role": "system", "content": ""},
-        {"role": "user", "content": "Say 'Hello world'"}
+        {"role": "system", "content": "Respond in XVIIth century French"},
+        {"role": "user", "content": "Say 'Hello world' as if you were King Louis XIV addressing his court at Versailles"}
     ],
     temperature=0.7,
     max_tokens=150,
